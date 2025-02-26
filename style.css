@@ -43,7 +43,12 @@ nav ul li a:hover {
     color: #FFD700; 
 }
 
-
+.ascii-banner {
+    font-family: "Courier New", monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 12px;
+}
 section {
     padding-top: 50px; 
     margin-top: -50px; 
@@ -61,15 +66,62 @@ section {
   
   .ascii-frame::before,
   .ascii-frame::after {
-    content: "----------------------------------";
+    content: "---------------------------------";
     display: block;
     text-align: center;
   }
   
   .ascii-frame::after {
-    content: "----------------------------------";
+    content: "---------------------------------";
   }
   
 p{
     font-family: 'Courier New', Courier, monospace;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+.Big{
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        gap: 0px;
+        padding: 0;
+        margin: 0px;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+    nav ul li a {
+        padding: 10px 15px;
+        display: block;
+        font-size: 12px;
+    }
+    .ascii-frame {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+    body {
+        font-size: 16px;
+    }
+    .ascii-banner {
+        font-size: 7px; 
+        line-height: 1.2; 
+    }
+    section {
+    padding-top: 50px; 
+    margin-top: -50px; 
+}
+}
+
