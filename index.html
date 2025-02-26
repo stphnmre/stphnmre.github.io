@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stephen's portfolio</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <header>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Technologies</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Technologies">Technologies</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -32,7 +33,90 @@
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
         </pre>
+        <section id="Skills">
+            <div class="ascii-frame">
+                <p>Skills</p>
+                <ul>
+                    <li>Python</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Astrophotography</li>
+                    <li>Photoshop</li>
+                    <li>Video editing(Blender)</li>
+                </ul>
+            </div>
+        </section>
+        <section id="Technologies">
+            <div class="ascii-frame">
+                <p>Technologies</p>
+                <ul>
+                    <li><strong>Source Control:</strong></li>
+                    <li>Git, Github</li>
+                    <li><strong>Operating Systems:</strong></li>
+                    <li>Windows, MacOs, Linux(Ubuntu)</li>
+                    <!--<li><strong></strong></li>-->
+                    <li><strong>Astrophotography:</strong></li>
+                    <li>Registax 6, AutoStakkert!</li>
+                    <li>PIPP, Siril, ASIAIR, DSS</li>
+                </ul>
+            </div>
+        </section>
+        <section id="Projects">
+            <div class="ascii-frame">
+                <p>Projects</p>
+                <ul>
+                    <li><a href="https://stphnmre.github.io/landing-page/">Momo is the best cat website</a></li>
+                    <li><a href="https://stphnmre.github.io/page2/">Another Momo page</a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="Contact">
+            <div class="ascii-frame">
+                <p>Contact</p>
+                <ul>
+                    <li>s_mmoore@icloud.com</li>
+                    <li><a href="https://github.com/stphnmre">https://github.com/stphnmre</a></li>
+                    <li><a href="https://www.linkedin.com/in/stephen-moore41006/">linkedin</a></li>
+                </ul>
+            </div>
+        </section>  
+        <div>
+            <p>Here are some of my astro photos!</p>
+        </div>
+        <img src="./images/jupiter-animation-with-text.jpeg" alt="Io eclipsing Jupiter">
         <img src="./images/winjuposwavee_copy.jpg" alt="Jupiter">
         <img src="./images/M42_Orion.jpg" alt="Orion Nebula" height="500" width="auto">
+        <img src="./images/IMG_0513.JPG" alt="Crescent Moon" height="500" width="auto">
+        
+        <script>
+            document.addEventListener("contextmenu", function (e) {
+              if (e.target.tagName === "IMG") {
+                e.preventDefault();
+              }
+            });
+          </script>
+          <script>
+            document.addEventListener("keydown", function(event) {
+              // Disable Print Screen (Windows)
+              if (event.key === "PrintScreen") {
+                event.preventDefault();
+                alert("Screenshots are disabled on this site!");
+              }
+              // Disable Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U (Developer Tools)
+              if (event.ctrlKey && (event.key === "u" || event.key === "U")) {
+                event.preventDefault();
+                alert("Viewing source is disabled!");
+              }
+            });
+          
+            // Detect F12 (Developer Console)
+            document.addEventListener("keydown", function(event) {
+              if (event.key === "F12") {
+                event.preventDefault();
+                alert("Developer tools are disabled!");
+              }
+            });
+          </script>  
 </body>
 </html>

@@ -4,6 +4,7 @@
 body{
     background-color: black;
 }
+  
 header {
     display: flex;
     justify-content: space-between;
@@ -39,5 +40,36 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #FFD700; /* Gold color on hover */
+    color: #FFD700; 
+}
+
+
+section {
+    padding-top: 50px; 
+    margin-top: -50px; 
+}
+
+.ascii-frame {
+    font-family: "Courier New", monospace;
+    color: white;
+    background: black;
+    padding: 10px;
+    width: fit-content;
+    margin: 0;
+    position: relative;
+  }
+  
+  .ascii-frame::before,
+  .ascii-frame::after {
+    content: "----------------------------------";
+    display: block;
+    text-align: center;
+  }
+  
+  .ascii-frame::after {
+    content: "----------------------------------";
+  }
+  
+p{
+    font-family: 'Courier New', Courier, monospace;
 }
